@@ -1,0 +1,248 @@
+html {
+	font-size: 10px;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-size: 1.6rem;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#root {
+	width: 98vw;
+	height: 100vh;
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+}
+
+.header {
+	width: 100%;
+    background: #1f2640;
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+    justify-content: space-between;
+    color: white;
+    height: 6rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.header .left {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.header .heading , .header .sub-heading {
+	color: white;
+	font-weight: 500;
+}
+
+.header .sub-heading {
+	margin-left: 2rem;
+}
+
+.employees {
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    padding: 10rem 0 4rem;
+    margin: 0 auto;
+    max-width: 100vw;
+    height: 100vh;
+}
+.employees > * {
+	width: 120rem;
+	max-width: calc(100% - 8rem);
+}
+.employees-header {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.heading {
+	font-size: 2.8rem;
+    line-height: 3.2rem;
+    color: #2b416c;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.btn {
+	outline: none;
+	padding: 0.8rem 1.5rem;
+	background-color: #3a77ed;
+	color: white;
+	font-size: 1.8rem;
+    line-height: 2.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 2px solid #3a77ed;
+}
+.btn:hover {
+	background-color: white;
+	color: #3a77ed;
+}
+
+.cancel-btn {
+	background-color: transparent;
+	border-color: transparent;
+	color: #7788a3;
+}
+.cancel-btn:hover {
+	border-color: #7788a3;
+	color: #7788a3;
+}
+
+.popup-content , .popup-header, .popup-footer {
+	padding: 1.5rem 2rem;
+}
+
+.popup-header {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	border-bottom: 2px solid #c8c8c8;
+}
+.popup-footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.popup-footer .cancel-btn {
+	margin-left: 2rem;
+}
+
+.sub-heading {
+	font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #7788a3;
+    font-weight: 700;
+}
+
+.detail {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.detail .key {
+	flex: 3;
+	font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #7788a3;
+}
+.detail .value {
+	flex: 5;
+	font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #2b416c;
+}
+
+.custom-input-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	position: relative;
+}
+
+.custom-input-container .label {
+	font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #7788a3;
+    margin-bottom: 0.7rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.input {
+    outline: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: #556789;
+    border: 2px solid #C9C9C9;
+    border-radius: 0.4rem;
+    width: 100%;
+}
+
+.custom-input-container .label.error {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	color: red;
+	font-size: 1.2rem;
+}
+
+.popup-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.popup-row:last-child {
+	margin-bottom: 0;
+}
+
+my-custom-input {
+	flex: 1;
+}
+
+.space-between {
+	width: 1.5rem;
+}
+
+#employeeData {
+	flex: 1;
+}
+
+
+@media screen and (max-width: 760px) {
+	html {
+		font-size: 9px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+
+@media screen and (max-width: 400px) {
+	html {
+		font-size: 7px;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	html {
+		font-size: 6px;
+	}
+}
