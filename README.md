@@ -1,1 +1,1 @@
-# CaseStudy
+# CaseStudy for Zeta's Frontend Assignment
