@@ -1,1 +1,1 @@
-# CaseStudy for Zeta's Frontend Assignment
+# CaseStudy for Zeta's Frontend Assignment Completely in Vanilla js
